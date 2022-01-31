@@ -67,8 +67,8 @@ export default {
     getTutorial(id) {
       TutorialDataService.get(id)
         .then((response) => {
-          this.currentTutorial = response.data;
           console.log(response.data);
+          this.currentTutorial = response.data;
         })
         .catch((e) => {
           console.log(e);

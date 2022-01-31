@@ -6,7 +6,7 @@ const TutorialDataService = {
   },
 
   get(id) {
-    return http.post(`/tutorials/${id}`);
+    return http.get(`/tutorials/${id}`);
   },
 
   create(data) {
