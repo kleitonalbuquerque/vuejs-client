@@ -1,6 +1,6 @@
 import http from "../http-common";
 
-class TutorialDataService {
+var tutorialDataService = class TutorialDataService {
   getAll() {
     return http.get("/tutorials");
   }
@@ -28,6 +28,6 @@ class TutorialDataService {
   findByTitle(title) {
     return http.get(`tutorials?title=${title}`);
   }
-}
+};
 
-export default TutorialDataService();
+export default tutorialDataService;
